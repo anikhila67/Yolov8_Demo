@@ -7,7 +7,7 @@ class yolov8_crack_nocrack():
     def __init__(self, model_path):
         self.color = (255, 0, 0)
         self.thickness = 3
-        # model_path = r"F:\visionify\BrightSpot\train3-v9-2\train3\weights\best.pt"
+        # model_path = r"F:weights\best.pt"
         self.model = YOLO(model_path) #, conf_thres=0.2, iou_thres=0.3)
 
     def main(self, args):
@@ -78,4 +78,4 @@ if __name__ == '__main__':
     test = yolov8_crack_nocrack(args.model_path)
     test.main(args)
 
-# python yolov8-crack-nocrack.py --model_path F:\visionify\BrightSpot\train3-v9-2\train3\weights\best.pt --image_path F:\visionify\BrightSpot\train3-v9-2\train3\images --crack_path F:\visionify\BrightSpot\train3-v9-2\train3\crack_images
+# python yolov8-crack-nocrack.py --model_path F:\weights\best.pt --image_path F:\train3\images --crack_path F:\crack_images

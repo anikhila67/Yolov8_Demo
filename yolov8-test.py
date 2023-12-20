@@ -6,7 +6,7 @@ class yolo_detect():
     def __init__(self):
         self.color = (255, 0, 0)
         self.thickness = 3
-        # self.model_path = r"F:\visionify\BrightSpot\train3-v9-2\train3\weights\best.pt" 
+        # self.model_path = r"F:\weights\best.pt" 
         self.model_path = r"E:\solar-v9\train6\weights\best.pt"
         self.model = YOLO(self.model_path)
 
@@ -61,7 +61,7 @@ if __name__ == '__main__':
         img = yolo.detect_image(img)
         cv2.imwrite(os.path.join(store_path, filename), img)
     # 
-    # filename = r"F:\visionify\BrightSpot\104263500160.jpg"
+    # filename = r"F:\104263500160.jpg"
     # img = cv2.imread(filename)
     # img = yolo.detect_image(img)
     # cv2.imwrite('panel-image.jpg', img)

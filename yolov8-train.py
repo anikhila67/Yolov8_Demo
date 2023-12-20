@@ -17,7 +17,7 @@ def train(args):
     dataset_path = args.dataset_path
     epochs = args.epochs
     model = YOLO('yolov8n.pt')
-    model.train(data = "/home/azureuser/nikhil-env/solar-dataset-v9/data.yaml", epochs=80)
+    model.train(data = "/home/azureuser/nikhil-env/dataset-v9/data.yaml", epochs=80)
 
 # yolo task=detect mode=predict model=yolov8n.pt source='/home/azureuser/nikhil-env/yolov5/solar-dataset-v6-noaug-yolo/train/images/9630e155bb1a412eb54d2bc95e88ce11.tif'
 
